@@ -20,19 +20,16 @@
   </style>
 </head>
 <body>
-    <div class="info-container" id="info-container">
-      <h2 id="info-title">Info</h2>
-      <p id="info-text">This is the description of the AR marker.</p>
-      <img id="info-image" src="" alt="Info Image" style="width: 100px;">
-    </div>
-    <a-scene embedded arjs>
-      <a-marker type="pattern" url="markers/marker1.patt" id="marker1">
-        <a-entity gltf-model="url(models/model1.gltf)" scale="0.5 0.5 0.5"></a-entity>
-      </a-marker>
-      <a-marker type="pattern" url="markers/marker2.patt" id="marker2">
-        <!-- <a-entity gltf-model="url(models/model2.gltf)" scale="0.5 0.5 0.5"></a-entity> -->
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
-  </html>
+  <div class="info-container" id="info-container">
+    <h2 id="info-title">Info</h2>
+    <p id="info-text">This is the description of the AR marker.</p>
+    <img id="info-image" src="" alt="Info Image" style="width: 100px;">
+  </div>
+  <a-scene embedded arjs>
+    <a-marker type="pattern" url="markers/marker1.patt" id="marker1">
+      <a-entity gltf-model="url(models/model1.glb)" scale="0.5 0.5 0.5"></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
