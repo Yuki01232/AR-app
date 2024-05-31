@@ -25,9 +25,9 @@
     <p id="info-text">This is the description of the AR marker.</p>
     <img id="info-image" src="" alt="Info Image" style="width: 100px;">
   </div>
-  <a-scene embedded arjs>
+  <a-scene embedded arjs="patternRatio:0.80">
     <a-marker type="pattern" url="markers/marker1.patt" id="marker1">
-      <a-entity gltf-model="url(models/model1.glb)" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity gltf-model="models/model1.glb" scale="0.5 0.5 0.5"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
